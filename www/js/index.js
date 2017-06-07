@@ -39,6 +39,11 @@ var app = {
 
         hockeyapp.checkForUpdate();
 
+        document.querySelector('#testdialog').addEventListener("touchend", function(){
+          console.log('testdialog');
+          navigator.notification.alert("This is a test...", null,"Alert Test", "OK!");
+        });
+
         document.querySelector('#forcecrash').addEventListener("touchend", function(){
           console.log('forcecrash');
           hockeyapp.forceCrash();
