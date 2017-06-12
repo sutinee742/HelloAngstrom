@@ -63,6 +63,15 @@
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.phonegap.helloangstrom"
+        },
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "com.phonegap.helloangstrom"
+        },
+        "cordova-plugin-wkwebview-engine": {
+            "PACKAGE_NAME": "com.phonegap.helloangstrom"
+        },
+        "cordova-plugin-hockeyapp": {
+            "PACKAGE_NAME": "com.phonegap.helloangstrom"
         }
     },
     "dependent_plugins": {

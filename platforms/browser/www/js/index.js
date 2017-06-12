@@ -34,6 +34,31 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        hockeyapp.start(null, null, "d9d6f0f95c954c6eacb3b66ff21df83d");
+
+        hockeyapp.checkForUpdate();
+
+        document.querySelector('#testdialog').addEventListener("touchend", function(){
+          console.log('testdialog');
+          navigator.notification.alert("This is a test...", null,"Alert Test", "OK!");
+        });
+
+        document.querySelector('#forcecrash').addEventListener("touchend", function(){
+          console.log('forcecrash');
+          hockeyapp.forceCrash();
+        });
+
+        document.querySelector('#feedback').addEventListener("touchend", function(){
+          console.log('feedback');
+          hockeyapp.feedback();
+        });
+
+        document.querySelector('#checkforupdates').addEventListener("touchend", function(){
+          console.log('checkforupdates');
+          hockeyapp.checkForUpdate();
+        });
+
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

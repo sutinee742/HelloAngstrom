@@ -35,7 +35,7 @@ var app = {
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
 
-        hockeyapp.start(null, null, "b2eee382255c4720bf6a38cdef7ba3d3");
+        hockeyapp.start(null, null, "d9d6f0f95c954c6eacb3b66ff21df83d");
 
         hockeyapp.checkForUpdate();
 
